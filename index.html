@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi App</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="anim.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>XM</h1>
+            <nav aria-label="Menú principal">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                </ul>
+            </nav>
+        </header>
+        <main aria-label="Contenido principal">
+            <article>
+                <h2>Ximena Merlin</h2>
+                <img src="xmlogo.svg" alt="Logo de Ximena Merlin">
+                <h3>Diseños a tu gusto!!!</h3>
+                <p>Como diseñador gráfico respaldado por la certificación Adobe Certified Professional en Visual Design, te ayudo a conectar con tus clientes mediante identidad corporativa, empaques y publicidad impresa o digital de alta calidad. Desde papelería institucional hasta diseños listos para DTF o sublimación, creo soluciones visuales honestas, profesionales y totalmente a tu gusto.</p>
+                <div class="botones-accion">
+                    <a href="tel:+529511232222" class="btn btn-llamar">📞 Llamar</a>
+                    <a href="https://wa.me/529511232222" class="btn btn-whatsapp" target="_blank">💬 WhatsApp</a>
+                </div>
+            </article>
+
+            <article>
+                <h2>Ganzo Island</h2>
+                <img src="duck.jpg" alt="Ganzo Island Logo">
+                <h3>Contacto</h3>
+
+                <!-- 1. QR + descarga .vcf -->
+                <div class="qr-section">
+                    <button id="btnMostrarQR" class="btn btn-secundario">📱 Mostrar QR de contacto</button>
+                    <div id="qrContainer" class="qr-container">
+                        <img src="contacto.webp" alt="Código QR para contacto" class="qr-imagen">
+                        <a href="contacto.vcf" download="contacto.vcf" class="btn btn-descarga">⬇ Descargar contacto .vcf</a>
+                    </div>
+                </div>
+
+                <!-- 2. Copiar datos -->
+                <button id="btnCopiarDatos" class="btn btn-copiar">📋 Copiar datos de contacto</button>
+
+                <!-- 3. Formulario -->
+                <form id="formContacto" class="form-contacto">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <div class="accion-formulario">
+                        <button type="submit" class="btn btn-enviar">📩 Solicitar información</button>
+                    </div>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <pre>All right reserved to duckling productions. Anade city. Ganzo Island. 2026</pre>
+        </footer>
+    </body>
+</html>
