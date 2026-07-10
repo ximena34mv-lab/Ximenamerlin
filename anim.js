@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (btnCopiar) {
         btnCopiar.addEventListener('click', function() {
             const datos = `
-Nombre: Anatolli Devorak Qwerty
-Empresa: Duckling Productions / Ganzo Island
-Teléfono: +52 951 123 2222
-Correo: contacto@duckling.com
-Web: https://duckling.com
+Nombre: Ximena Merlí Vásquez
+Empresa: Ximena Merlin
+Teléfono: +52 951 556 5230
+Correo:ximena34mv@institutosanpablo.edu.mx
+Web: 
             `.trim();
 
             // Usar clipboard API con fallback
