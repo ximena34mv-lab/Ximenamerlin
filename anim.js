@@ -75,7 +75,7 @@ Nombre: Ximena Merlí Vásquez
 Empresa: Ximena Merlin
 Teléfono: +52 951 556 5230
 Correo:ximena34mv@institutosanpablo.edu.mx
-Web: 
+Web: https://ximena34mv-lab.github.io/Ximenamerlin/
             `.trim();
 
             // Usar clipboard API con fallback
